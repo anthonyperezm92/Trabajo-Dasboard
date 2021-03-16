@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Font & Icon -->
+  <link rel="stylesheet" href="font/inter/inter.min.css" id="font-css">
+  <link rel="stylesheet" href="plugins/material-design-icons-iconfont/material-design-icons.min.css">
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+   <!-- Plugins -->
+  <link rel="stylesheet" href="plugins/nouislider/nouislider.min.css">
+    <!-- Plugins -->
+  <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="css/style.min.css" id="main-css">
+  <link rel="stylesheet" href="css/sidebar-royal.min.css" id="theme-css"> 
+  <!-- options: blue,cyan,dark,gray,green,pink,purple,red,royal,ash,crimson,namn,frost -->
+ 
+  <title>Suicidios en el Mundo</title>
+  
+   <style type="text/css">
+  @media (min-width: 992px){
+	.sidebar-collapse #main {
+		margin-left: 3.5rem !important;
+		 margin-right: 3.5rem !important;
+	}
+	}
+  </style>
+</head>
+
+<body class='sidebar-collapse'>
+
+<!-- Sidebar -->
+  <div class="sidebar" style="display:none;">
+</div>
+  <!-- /Sidebar -->
+  <!-- Main -->
+  <div class="main" id ="main">
+
+    
+
+    <!-- Main body -->
+    <div class="main-body p-0">
+
+      <!-- Breadcrumb -->
+       <div class="inner-main-header">
+           <!--  <a class="nav-link nav-icon rounded-circle nav-link-faded mr-3 d-md-none" href="#" data-toggle="inner-sidebar"><i class="material-icons">arrow_forward_ios</i></a> -->
+            <h5 class="mb-0">Analisis suicidios en el mundo</h5>
+       </div>
+      <!-- /Breadcrumb -->
+
+     
+
+	  <div class="row gutters-sm">
+	  
+		  <div class="col-xl-2 mb-3 mt-3">
+			 <div class="card">
+				<div class="card-body">
+					<div class="row">
+						<div class="col-sm-12 col-xl-12 ">
+							<section id="section11">
+								<h5>Pais</h5>
+								<p class="text-muted font-size-sm">
+								  Seleccione pais
+								</p>
+								 <select class="form-control select2" id="sel_pais" data-select2-search="true" data-placeholder="Pais">
+								</select>	  
+							</section>
+						</div>		
+					</div>			  
+				</div>
+			  </div>
+			 <div class="card mt-3">
+				<div class="card-body">
+					<div class="row">
+						<div class="col-sm-12 col-xl-12 ">
+							<section id="section11">
+								<h5>Rango de edad</h5>
+								<p class="text-muted font-size-sm">
+								  Seleccione el rango de edad a mostrar
+								</p>
+								<div class="custom-control custom-checkbox">
+								  <input type="checkbox" class="custom-control-input check-inp" id="check-05-14">
+								  <label class="custom-control-label" for="check-05-14">05-14 a&ntilde;os</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+								  <input type="checkbox" class="custom-control-input check-inp" id="check-15-24" checked>
+								  <label class="custom-control-label" for="check-15-24">15-24 a&ntilde;os</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+								  <input type="checkbox" class="custom-control-input check-inp" id="check-25-34" checked>
+								  <label class="custom-control-label" for="check-25-34">25-34 a&ntilde;os</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+								  <input type="checkbox" class="custom-control-input check-inp" id="check-35-54" checked>
+								  <label class="custom-control-label" for="check-35-54">35-54 a&ntilde;os</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+								  <input type="checkbox" class="custom-control-input check-inp" id="check-55-74">
+								  <label class="custom-control-label" for="check-55-74">55-74 a&ntilde;os</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+								  <input type="checkbox" class="custom-control-input check-inp" id="check-75">
+								  <label class="custom-control-label" for="check-75">75+ a&ntilde;os</label>
+								</div>						  
+							</section>
+						</div>		
+					</div>			  
+				</div>
+			  </div>	
+			  <div class="card mt-3">
+				<div class="card-body">
+					<div class="row">
+						<div class="col-sm-12 col-xl-12 ">
+							<section id="section11">
+								<h5>Rango de a&ntilde;os</h5>
+								<p class="text-muted font-size-sm">
+								  Seleccione rango de años a mostrar
+								</p>
+									<div id="slider5" class="slider-danger slider-example mt-5"></div>				  
+							</section>
+						</div>		
+					</div>			  
+				</div>
+			  </div>	
+		  </div>
+	  
+		<div class="col-xl-10 mb-3 mt-3">
+			<div class="row">
+			  <!-- POBLACION -->
+				<div class="col-sm-4 col-xl-4 mb-3">
+				  <div class="card h-100">
+					<div class="card-body">
+					  <div class="flex-center justify-content-start mb-2">
+						<i data-feather="link" class="mr-2 font-size-lgs"></i>
+						<h3 class="card-title mb-0 mr-auto"><span id="num_pobla">958</span></h3>						
+					  </div>
+					  <h6 class="text-primary">POBLACION AL <span class="num_anio">2016</span></h6>
+					  <p class="small text-secondary mb-0">Numero total de habitantes en el pais.</p>
+					</div>
+				  </div>
+				</div>
+				<!-- /POBLACION -->
+
+				<!-- TOTAL SUICIDIOS -->
+				<div class="col-sm-4 col-xl-4 mb-3">
+				  <div class="card h-100">
+					<div class="card-body">
+					  <div class="flex-center justify-content-start mb-2">
+						<i data-feather="book" class="mr-2 font-size-lgs"></i>
+						<h3 class="card-title mb-0 mr-auto"><span id="num_promedio">958</span></h3>
+					  </div>
+					  <h6 class="text-danger">TOTAL SUICIDIOS AL AÑO <span class="num_anio">2016</span></h6>
+					  <p class="small text-secondary mb-0">Promedio de suicidios por año .</p>
+					</div>
+				  </div>
+				</div>
+				<!-- TOTAL SUICIDIOS -->
+
+				<!-- 100K HAB -->
+				<div class="col-sm-4 col-xl-4 mb-3">
+				  <div class="card h-100">
+					<div class="card-body">
+					  <div class="flex-center justify-content-start mb-2">
+						<i data-feather="image" class="mr-2 font-size-lgs"></i>
+						<h3 class="card-title mb-0 mr-auto"><span id="num_100k">958</span></h3>
+					  </div>
+					  <h6 class="text-success">SUICIDIOS POR 100K HAB <span class="num_anio">2016</span></h6>
+					  <p class="small text-secondary mb-0">Promedio de suicidios al año por cada 100 mil habitantes.</p>
+					</div>
+				  </div>
+				</div>
+				<!-- 100K HAB -->
+
+				<!-- por Genero -->
+				<div class="col-xl-9 mb-3">
+				  <div class="card h-100">
+					<h6 class="card-header">Evolucion de por Genero</h6>
+					<div class="card-body">
+					  <div style="height: 300px">
+						<canvas id="graficolineas"></canvas>
+					  </div>
+					</div>
+				  </div>				  
+				</div>
+				<!-- /por Genero -->
+
+				<!-- por Genero -->
+				<div class="col-md-6 col-xl-3 mb-3">
+				  <div class="card h-100">
+					<h6 class="card-header">Distribuci&oacute;n por Genero</h6>
+					<div class="card-body" style="max-height: 240px">
+					  <canvas id="graficopie"></canvas>
+					</div>
+					<div class="card-footer d-block">
+					  <div class="row">
+						<div class="col-6">
+						  <small class="text-secondary">Hombres</small>
+						  <div class="d-flex align-items-center">
+							<span class="font-size-lg text-danger mr-1">&#8857;</span>
+							<h6 class="mb-0"><span id="num_nombres">1,320</span>
+								<small class="text-muted" id="por_nombres">25%</small></h6>
+						  </div>
+						</div>
+						<div class="col-6">
+						  <small class="text-secondary">Mujeres</small>
+						  <div class="d-flex align-items-center">
+							<span class="font-size-lg text-primary mr-1">&#8857;</span>
+							<h6 class="mb-0"><span id="num_mujeres">1,320</span> 
+								<small class="text-muted" id="por_mujeres">20%</small></h6>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<!-- /por Genero -->
+
+				<!-- Distribucion de suicidios -->
+				<div class="col-md-12 col-xl-12 mb-3">
+				  <div class="card h-100">
+					<div class="card-header border-0">
+					  <h6>Distribucion de suicidios por a&ntilde;o</h6>
+					</div>
+					<div class="card-body">
+					  <div class="row">
+						<div class="col-lg-12 col-xl-12 mb-3" style="height: 300px">
+						  <canvas id="graficobarras"></canvas>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<!-- /Distribucion de suicidios -->
+ 
+			</div>
+		</div>
+      </div>
+	  
+    </div>
+    <!-- /Main body -->
+
+  </div>
+  <!-- /Main -->
+
+
+
+  <!-- Main Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="plugins/simplebar/simplebar.min.js"></script>
+  <script src="plugins/feather-icons/feather.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="plugins/chart.js/Chart.min.js"></script>
+  <script src="plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+  <!-- Plugins -->
+  <script src="plugins/nouislider/nouislider.min.js"></script>
+  <!-- Plugins -->
+  <script src="plugins/select2/js/select2.min.js"></script>
+  <script src="js/d3.js"></script>  
+  <script src="app.js"></script>  
+</body>
+
+</html>
